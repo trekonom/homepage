@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# VS Code
+.vscode/
+
+# build
+dist/
+
+# logs
+*.log
+
+# environment
+.env
