@@ -74,6 +74,31 @@ body {
 .hero-content {
     max-width: 900px;
     z-index: 2;
+    margin: 0 2rem; /* Add horizontal breathing room */
+    padding: 2rem 0; /* Add vertical spacing */
+}
+
+.hero-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 3rem;
+    letter-spacing: 0.5px;
+    display: flex;           /* use flexbox */
+    align-items: center;     /* vertically center text and image */
+    justify-content: center; /* center the whole line horizontally */
+    gap: 0.6rem;             /* space between first name, image, last name */
+}
+
+.name-separator {
+    width: 120px;             /* image width */
+    height: 120px;            /* image height */
+    object-fit: cover;       /* fill circle without distortion */
+}
+
+.round-image {
+    border-radius: 50%;      /* makes it circular */
+    border: 1px solid var(--muted); /* optional accent border */
 }
 
 h1 {
@@ -91,6 +116,7 @@ h1 {
 .subtitle {
     font-size: 1.25rem;
     color: var(--muted);
+    margin-top: 3rem;
     margin-bottom: 2.5rem;
     line-height: 1.6;
 }
