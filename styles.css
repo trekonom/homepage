@@ -1,176 +1,176 @@
 :root {
-    --bg: #0f172a;
-    --text: #e5e7eb;
-    --muted: #94a3b8;
-    --accent: #2563eb;
-    --accent-light: #3b82f6;
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #2563eb;
+  --accent-light: #3b82f6;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
 }
 
 /* Top navigation */
 .top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    backdrop-filter: blur(6px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  backdrop-filter: blur(6px);
 }
 .top-nav .nav-inner {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0.6rem 1rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.6rem 1rem;
 }
-.top-nav .socials { 
-    display: flex; 
-    gap: 0.6rem; 
+.top-nav .socials {
+  display: flex;
+  gap: 0.6rem;
 }
-.top-nav .social { 
-    color: var(--text); 
-    font-size: 20px;
-    transition: all 0.3s ease;
-    text-decoration: none; 
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+.top-nav .social {
+  color: var(--text);
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
-.top-nav .social:hover { 
-    color: var(--accent-light); 
-    background: rgba(255, 255, 255, 0.25);
-    transform: translateY(-2px) scale(1.1);
+.top-nav .social:hover {
+  color: var(--accent-light);
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px) scale(1.1);
 }
 
 /* Give hero content space for fixed nav */
 .hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  overflow: hidden;
 }
 
 .hero-content {
-    max-width: 900px;
-    z-index: 2;
-    margin: 0 2rem; /* Add horizontal breathing room */
-    padding: 2rem 0; /* Add vertical spacing */
+  max-width: 900px;
+  z-index: 2;
+  margin: 0 2rem; /* Add horizontal breathing room */
+  padding: 2rem 0; /* Add vertical spacing */
 }
 
 .hero-name {
-    font-family: "Inter", sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    /*text-transform: uppercase;*/
-    color: #cbd5e1;
-    margin-bottom: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  /*text-transform: uppercase;*/
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
 }
 
 .name-separator {
-    width: 120px;             /* image width */
-    height: 120px;            /* image height */
-    object-fit: cover;       /* fill circle without distortion */
+  width: 120px; /* image width */
+  height: 120px; /* image height */
+  object-fit: cover; /* fill circle without distortion */
 }
 
 .round-image {
-    border-radius: 50%;      /* makes it circular */
-    border: 1px solid var(--muted); /* optional accent border */
+  border-radius: 50%; /* makes it circular */
+  border: 1px solid var(--muted); /* optional accent border */
 }
 
 h1 {
-    font-family: "Playfair Display", serif;
-    font-size: clamp(2.75rem, 5vw, 4rem);
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
 }
 
 .highlight {
-    color: var(--accent-light);
+  color: var(--accent-light);
 }
 
 .subtitle {
-    font-size: 1.25rem;
-    color: var(--muted);
-    margin-top: 3rem;
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
+  font-size: 1.25rem;
+  color: var(--muted);
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
 }
 
 .cta-group {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn {
-    padding: 0.9rem 1.8rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    font-weight: 500;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .btn-primary {
-    background: var(--accent);
-    color: white;
+  background: var(--accent);
+  color: white;
 }
 
 .btn-primary:hover {
-    background: var(--accent-light);
-    transform: translateY(-2px);
+  background: var(--accent-light);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background: transparent;
-    color: var(--text);
-    border: 1px solid var(--muted);
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--muted);
 }
 
 .btn-secondary:hover {
-    border-color: var(--accent-light);
-    color: var(--accent-light);
-    transform: translateY(-2px);
+  border-color: var(--accent-light);
+  color: var(--accent-light);
+  transform: translateY(-2px);
 }
 
 .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
 }
 
 .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
