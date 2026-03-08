@@ -101,6 +101,8 @@ body {
 .round-image {
   border-radius: 50%; /* makes it circular */
   border: 1px solid var(--muted); /* optional accent border */
+  padding: 2px; /* space between image and border */
+  /* padding pushes the image away from the border; adjust value as needed */
 }
 
 h1 {
